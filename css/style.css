@@ -7,6 +7,15 @@
     border-color: #3D5F41;
 }
 
+.btn {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: #3D5F41;
+    border-color: #9BB49B;
+}
+
 .skill-card {
     background-color: #3D5F41;
 }
