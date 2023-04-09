@@ -40,10 +40,9 @@
                             Projects
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#project01">Project 01</a>
-                            <a class="dropdown-item" href="#project02">Project 02</a>
-                            <a class="dropdown-item" href="#project03">Project 03</a>
-                            <a class="dropdown-item" href="#project04">Project 04</a>
+                            <a class="dropdown-item" href="#project01">Synesound</a>
+                            <a class="dropdown-item" href="#project02">Code Quiz</a>
+                            <a class="dropdown-item" href="#project03">MealMap</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#work">See all</a>
                         </div>
@@ -56,14 +55,15 @@
     </header>
     <main>
         <!--Hero section-->
-        <div class="jumbotron jumbotron-fluid jumbotron-bg" id="jumbotron">
+        <div class="jumbotron jumbotron-fluid bg-light" id="jumbotron">
             <div class="row mx-3">
                 <div class="col-2 d-none d-md-block">
-                    <img src="./images/Foto carnet_square.jpg" class="mx-5" alt="">
+                    <img src="./images/CV Irene.jpg" class="rounded mx-auto d-block img-fluid max-width: 100%" alt="">
                 </div>
                 <div class="col-10">
                     <h1 class="display-4">Welcome!</h1>
-                    <p class="lead">My name is Irene Suarez Jimenez and this is my portfolio as a Web Developer</p>
+                    <p class="lead">My name is Irene and this is my portfolio as a Front End Web
+                        Developer</p>
                     <hr class="my-4">
                     <p>Follow the link below to learn more about me
                     </p>
@@ -74,53 +74,51 @@
 
 
         <!--Work section-->
+        <h2 id="work">My Work</h2>
+        <hr class="my-2">
 
-        <div class="container-fluid">
-            <h2 id="work">My Work</h2>
-            <hr class="my-2">
-            <div class="row my-5">
-                <div class="col-sm-12 col-md-3">
-                    <div class="card" id="project01" style="width: 1fr;">
-                        <img src="./images/shutterstock_1635335647.jpg" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 01</h5>
-                            <p class="card-text">Architectural portfolio</p>
-                            <a href="https://www.google.es/" target="_blank" class="btn btn-primary">Take me there</a>
-                        </div>
-                    </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="./images/Synesound Screenshot.jpg" height="250px" class="card-img-top " alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Synesound</h5>
+                    <p class="card-text overflow-auto">Synesound is a web application based on the concept of
+                        synesthesia. It
+                        allows the user to upload an image to the website that, upon login on Spotify on the
+                        application, would retrieve data from the image and would pick a song that relates to
+                        the image and play it as well as changing the background of the next page based on the
+                        colours extracted from the uploaded image. This image is also uploaded into a cloud
+                        storage service.</p>
+                    <a href="https://synesound.vercel.app/" target="_blank" class="btn btn-primary mt-auto">Take me
+                        there</a>
                 </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card" id="project02" style="width: 1fr;">
-                        <img src="./images/shutterstock_490655017.jpg" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 02</h5>
-                            <p class="card-text">Restaurant website page</p>
-                            <a href="https://www.google.es/" target="_blank" class="btn btn-primary">Take me there</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="./images/Coding quiz Screenshot.jpg" height="250px" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Code Quiz</h5>
+                    <p class="card-text overflow-auto">Codequiz is a web application to test your knowledge in coding
+                        and
+                        prepare you for your Front End Web Development interview. It allows the user to respond
+                        to questions and get a final score.
+                    </p>
+                    <a href="https://iresuji.github.io/code-quiz/" target="_blank" class="btn btn-primary mt-auto">Take
+                        me there</a>
                 </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card" id="project03" style="width: 1fr;">
-                        <img src="./images/shutterstock_581335189.jpg" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 03</h5>
-                            <p class="card-text">Jewelry designer website page</p>
-                            <a href="https://www.google.es/" target="_blank" class="btn btn-primary">Take me there</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card" id="project04" style="width: 1fr;">
-                        <img src="./images/shutterstock_1007319937.jpg" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 04</h5>
-                            <p class="card-text">Blog website</p>
-                            <a href="https://www.google.es/" target="_blank" class="btn btn-primary">Take me there</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="./images/MealMap Screenshot.jpg" height="250px" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">MealMap</h5>
+                    <p class="card-text overflow-auto">Meal map finds the available restaurants in the area upon
+                        inserting a
+                        city on the search bar.</p>
+                    <a href="https://iresuji.github.io/Meal-Map/" target="_blank" class="btn btn-primary mt-auto">Take
+                        me there</a>
                 </div>
             </div>
         </div>
+
         <!--Skills section-->
         <div class="container-fluid">
             <div class="row">
@@ -184,14 +182,14 @@
                 <div class="col col-md-3 mb-2">
                     <div class="card skill-card text-white" style="width: 10rem;">
                         <div class="card-body">
-                            <h5 class="card-title">REACT</h5>
+                            <h5 class="card-title">REACT.JS</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-3 mb-2">
                     <div class="card skill-card text-white" style="width: 10rem;">
                         <div class="card-body">
-                            <h5 class="card-title">UX</h5>
+                            <h5 class="card-title">JQUERY</h5>
                         </div>
                     </div>
                 </div>
@@ -199,21 +197,21 @@
                 <div class="col col-sm-3 mb-2">
                     <div class="card skill-card text-white" style="width: 10rem;">
                         <div class="card-body">
-                            <h5 class="card-title">EMMET</h5>
+                            <h5 class="card-title">NEXT.JS</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col col-sm-3 mb-2">
                     <div class="card skill-card text-white" style="width: 10rem;">
                         <div class="card-body">
-                            <h5 class="card-title">DESIGN</h5>
+                            <h5 class="card-title">TAILWIND</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col col-sm-3 mb-2">
                     <div class="card skill-card text-white" style="width: 10rem;">
                         <div class="card-body">
-                            <h5 class="card-title">JAVA</h5>
+                            <h5 class="card-title">VSCODE</h5>
                         </div>
                     </div>
                 </div>
@@ -229,28 +227,26 @@
                     <div class="col-lg-8 justify-content-start">
                         <h2 id="about">About me</h2>
                         <hr class="my-15">
-                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aperiam
-                            delectus fuga voluptatum illum sunt enim illo voluptates rerum ullam dicta.
+                        <p class="text-justify">Front End Web Developer with a background in Architecture and a
+                            life-long dedication to learning.
                             <br>
                             <br>
-                            Consequatur
-                            dignissimos quis quae omnis quibusdam ab voluptatum deserunt. Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Consequatur cupiditate architecto ex nisi esse non repudiandae
-                            placeat rem molestiae omnis unde, molestias aliquam ipsum laudantium sapiente vero voluptate
-                            nam veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            I have a certificate as a Front End Developer after graduating on a A 24-week intensive
+                            program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery,
+                            Bootstrap, ReactJS and Node.js. Passed with a final grade of 96.62% over 100%. The course
+                            was imparted by EdX and Trilogy Education Services.
                             <br>
                             <br>
-                            Quo, enim dolore fugit
-                            doloremque explicabo nulla perferendis beatae consequuntur consequatur necessitatibus ea
-                            dolorem magni laudantium quis maiores veniam ut saepe aut. Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. Necessitatibus porro repellendus, qui optio magni minima
-                            laboriosam perferendis pariatur magnam,
+                            I have a strong passion for learning and creating. I am a very versatile team player with an
+                            eye for detail and support. My experience as an architect has gained me a significant
+                            experience with dealing with external and internal teams and clients as well as a giving me
+                            a strong desing background.
                             <br>
                             <br>
-                            veniam tempora, minus cumque ratione repudiandae
-                            itaque iusto at aperiam! Vel veniam repudiandae eaque nisi odit sit adipisci excepturi.
-                            Ipsum voluptatum beatae quasi quia! Aut nulla praesentium ad ex, consectetur cumque?Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quo.
+                            I am furthermore currently enrolled on a MiroBachelors program by IBM and EdX- focused on
+                            Cloud application development including: node.js and Express, Containers, Kubernetes,
+                            OpenShift as well as Python and Django application development with SQL and microservices
+                            and serverless applications.
                         </p>
 
                     </div>
