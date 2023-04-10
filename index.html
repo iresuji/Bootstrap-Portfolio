@@ -9,6 +9,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>My Bootstrap portfolio</title>
 </head>
 
@@ -89,7 +90,8 @@
                         the image and play it as well as changing the background of the next page based on the
                         colours extracted from the uploaded image. This image is also uploaded into a cloud
                         storage service.</p>
-                    <a href="https://synesound.vercel.app/" target="_blank" class="btn btn-primary mt-auto">Take me
+                    <a href="https://synesound.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary mt-auto">Take me
                         there</a>
                 </div>
             </div>
@@ -102,7 +104,8 @@
                         prepare you for your Front End Web Development interview. It allows the user to respond
                         to questions and get a final score.
                     </p>
-                    <a href="https://iresuji.github.io/code-quiz/" target="_blank" class="btn btn-primary mt-auto">Take
+                    <a href="https://iresuji.github.io/code-quiz/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary mt-auto">Take
                         me there</a>
                 </div>
             </div>
@@ -113,7 +116,8 @@
                     <p class="card-text overflow-auto">Meal map finds the available restaurants in the area upon
                         inserting a
                         city on the search bar.</p>
-                    <a href="https://iresuji.github.io/Meal-Map/" target="_blank" class="btn btn-primary mt-auto">Take
+                    <a href="https://iresuji.github.io/Meal-Map/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary mt-auto">Take
                         me there</a>
                 </div>
             </div>
@@ -260,16 +264,17 @@
                             </div>
                             <div class="row justify-content-center my-5">
                                 <div class="col">
-                                    <form action="">
+                                    <form>
                                         <label for="email" class="form-label">Email:</label>
                                         <input type="email" id="email" class="form-control" placeholder="my@email.com">
                                         <label for="name" class="form-label">Name:</label>
                                         <input type="name" id="name" class="form-control" placeholder="e.g. Irene">
-                                        <label for="query">Write a message</label>
-                                        <textarea name="query" id="query" cols="30" rows="5"
+                                        <label for="message">Write a message</label>
+                                        <textarea name="message" id="message" cols="30" rows="5"
                                             class="form-control"></textarea>
                                         <div class="text-center mt-3">
-                                            <button type="submit" class="btn btn-primary">Send</button>
+                                            <button type="submit" class="btn btn-primary"
+                                                onclick="sendMail()">Submmit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -365,6 +370,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <!-- emailjs form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8fpaPL9BAGghmt_k1");
+        })();
+    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
